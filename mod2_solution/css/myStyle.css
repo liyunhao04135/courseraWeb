@@ -1,0 +1,88 @@
+/*base rule*/
+*
+{
+	font-family:times,serif;
+	font-size: 100%; 
+}
+h1
+{
+	text-align: center;
+	font-size:175%;
+}
+section
+{
+	position:relative;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 1px;
+	background-color: gray;
+}
+span
+{
+	position:absolute;
+	top: 0;
+	right:0;
+	border-style: solid;
+	border-width: 1px;
+	font-weight: bold;
+	font-size:125%;
+}
+
+span.first
+{
+	background-color: red;
+	font-color:white;
+}
+span.second
+{
+	background-color: white;
+}
+span.third
+{
+	background-color:orange;
+}
+
+p
+{
+	clear:left;
+}
+
+/* for the desktop */
+@media (min-width: 992px)
+{
+	section
+	{
+		float:left;
+		width:30%;
+		margin:1.6%;
+		padding:2%;
+	}
+}
+/* for tablet */
+@media (min-width: 768px) and (max-width: 991px)
+{
+	section
+	{
+		float:left;
+		width:45%;
+		margin:2.5%;
+		padding:2%;
+	}
+	section.third
+	{
+		clear:left;
+		width:95%;
+		margin:2.5%;
+		padding:2%;
+	}
+}
+/* for moblie*/
+@media (max-width: 767px)
+{
+	section
+	{
+		width:95%;
+		margin:2.5%;
+		padding:2%;
+	}
+}
